@@ -25,9 +25,19 @@ export default function Dictioary() {
 	}
 	return (
 		<div className="Dictionary">
-			<form onSubmit={search}>
-				<input type="search" onChange={handleKeywordChange} />
-			</form>
+			<section>
+				<h1>What word do you want to look up?</h1>
+				<form onSubmit={search}>
+					<input
+						type="search"
+						onChange={handleKeywordChange}
+						defaultValue={PaymentResponse.defaultKeyword}
+					/>
+				</form>
+				<div className="hint">
+					suggested words: sunset, yoga, forest, sky...
+				</div>
+			</section>
 			<Results results={results} />
 		</div>
 	);
