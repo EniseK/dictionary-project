@@ -1,0 +1,10 @@
+img[alt="word-images"] {
+	border-radius: 5px;
+	margin: 3px;
+}
+
+@media (max-width: 1200px) {
+	.col-4 {
+		display: contents;
+	}
+}
